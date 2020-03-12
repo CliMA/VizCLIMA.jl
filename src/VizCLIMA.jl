@@ -1,5 +1,5 @@
 module VizCLIMA
 
-greet() = print("Hello World!")
+greet() = "Hello World!"
 
 end # module

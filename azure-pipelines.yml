@@ -49,7 +49,7 @@ jobs:
                                                                    slug         = ENV["BUILD_REPOSITORY_NAME"],
                                                                    build        = ENV["BUILD_BUILDID"])'
     env:
-      CODECOV_TOKEN: "d5ad49b6-c247-44f7-a529-5f749a8b0c2a"
+      CODECOV_TOKEN: "47d82c21-93dd-4334-ba58-a083f81ac749"
     displayName: 'Submit code coverage'
     continueOnError: true
 
