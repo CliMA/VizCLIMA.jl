@@ -1,4 +1,5 @@
 using Test, Pkg
+using VizCLIMA
 
 ENV["JULIA_LOG_LEVEL"] = "WARN"
 
@@ -11,6 +12,7 @@ end
 
 
 @testset "VizCLIMA" begin
+    @test VizCLIMA.greet() == "Hello World!"
     all_tests = isempty(ARGS) || "all" in ARGS ? true : false
 
     for submodule in [
