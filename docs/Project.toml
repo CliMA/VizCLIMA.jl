@@ -1,0 +1,3 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+VizCLIMA = "9e7e47b7-7552-4bde-926d-3819d42672a5"
