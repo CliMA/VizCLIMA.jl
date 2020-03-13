@@ -1,5 +1,5 @@
 status = [
-  "VizCLIMA",
+  "climate-machine.VizCLIMA.jl",
 ]
 delete_merged_branches = true
 timeout_sec = 86400
