@@ -26,8 +26,13 @@ def main():
     varlist = {}
     shapelist = {}
     file_list = os.listdir(directory)
-    num_files = 0.0
-    # get the list of variables and thier shapes
+    num_files = -1
+    # loop to get the length of the simtime as the number of files in the diagnostic_type
+    for filename in sorted(os.listdir(directory)):
+        if filename.endswith(".nc") and diagnstic_type in filename:
+            num_files += 1
+
+    # get the list of variables and thier shapes from the first file in the diagnostic type
     for filename in sorted(os.listdir(directory)):
         if filename.endswith(".nc") and diagnstic_type in filename:
             fullfilename = directory+filename
@@ -46,7 +51,7 @@ def main():
     outputname = directory+'Stats.'+filename[0:s]+'.'+diagnstic_type+'.nc'
     output = nc.Dataset(outputname, "w", format="NETCDF4")
     output.createDimension('z', len(_z))
-    output.createDimension('t',72)
+    output.createDimension('t',num_files)
     output.createGroup("variables")
     profiles_grp = output.groups["variables"]
 
