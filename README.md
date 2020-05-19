@@ -10,14 +10,14 @@ A toolkit for visualizing CLIMA's results
 | **Bors**             | [![Bors enabled][bors-img]][bors-url]         |
 
 [docs-latest-img]: https://img.shields.io/badge/docs-latest-blue.svg
-[docs-latest-url]: https://climate-machine.github.io/VizCLIMA.jl/latest/
+[docs-latest-url]: https://CliMA.github.io/VizCLIMA.jl/latest/
 
 [azure-img]: https://dev.azure.com/climate-machine/VizCLIMA/_apis/build/status/climate-machine.VizCLIMA.jl?branchName=master
 [azure-url]: https://dev.azure.com/climate-machine/VizCLIMA/_build/latest?definitionId=8&branchName=master
 
-[codecov-img]: https://codecov.io/gh/climate-machine/VizCLIMA.jl/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/climate-machine/VizCLIMA.jl
+[codecov-img]: https://codecov.io/gh/CliMA/VizCLIMA.jl/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/CliMA/VizCLIMA.jl
 
 [bors-img]: https://bors.tech/images/badge_small.svg
-[bors-url]: https://app.bors.tech/repositories/23739
+[bors-url]: https://app.bors.tech/repositories/24781
 

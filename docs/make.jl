@@ -23,6 +23,6 @@ makedocs(
 )
 
 deploydocs(
-           repo = "github.com/climate-machine/VizCLIMA.jl.git",
+           repo = "github.com/CliMA/VizCLIMA.jl.git",
            target = "build",
           )
