@@ -34,6 +34,8 @@ src/**/Manifest.toml
 *.swp
 *.png
 *.nc
+*BUP
 !docs/src/assets/*.png
 *~
 TAGS
+
