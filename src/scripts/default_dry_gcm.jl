@@ -4,9 +4,9 @@ using NCDatasets
 using Statistics: mean
 
 # data folders
-data_folder = "/central/scratch/bischtob/gcm_sb/netcdf/"
-combined_file = "/central/scratch/bischtob/gcm_sb/netcdf/combined.nc"
-analysis_folder = "/central/scratch/bischtob/gcm_sb/analysis/"
+data_folder = "/central/scratch/bischtob/gcm_dcmip31/netcdf/"
+combined_file = "/central/scratch/bischtob/gcm_dcmip31/netcdf/combined.nc"
+analysis_folder = "/central/scratch/bischtob/gcm_dcmip31/analysis/"
 
 # check if combined file extist, otherwise create it
 if !isfile(combined_file)
