@@ -1,7 +1,4 @@
-using Plots
-
 using NCDatasets
-using Statistics: mean
 
 # data folders
 data_folder = "/central/scratch/bischtob/gcm_dcmip31/netcdf/"
