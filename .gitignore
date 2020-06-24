@@ -39,3 +39,4 @@ src/**/Manifest.toml
 *~
 TAGS
 
+*-checkpoint.ipynb
