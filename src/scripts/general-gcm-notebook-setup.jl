@@ -13,7 +13,7 @@ CLIMA_NETCDF = "../netcdf/";
 
 # Get the current and previous  GCM netcdf file names in the CLIMA_NETCDF directory
 fnames = filter(x -> occursin(".nc", x), readdir( CLIMA_NETCDF ) );
-filename = "../netcdf/"fnames[end] # selects the last file on list
+filename = "$CLIMA_NETCDF"fnames[end] # selects the last file on list
 
 # extract data
 ds = NCDataset(file_name, "r");
