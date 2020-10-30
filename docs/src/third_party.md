@@ -13,11 +13,15 @@
 
 ![alt text](https://lenkanovak.github.io/images/animated.gif "temperature cross-section with atmosphere thickness blown up")
 
+[link](https://lenkanovak.github.io/images/animated.gif)
+
 ![alt text](https://lenkanovak.github.io/images/animated_smoke_3_b.gif "temperature and wind")
+[link](https://lenkanovak.github.io/images/animated_smoke_3_b.gif)
 
 ![alt text](https://lenkanovak.github.io/images/hairy.gif "snapshot of zonal wind: clip and streamlines")
+[link](https://lenkanovak.github.io/images/hairy.gif)
 
 ## Example from Houdini: Cumulus cloud simulating the BOMEX case using ClimateMachine.jl (v0.1.0)
 ![alt text](https://lenkanovak.github.io/images/houdini.mp4 "BOMEX simulation: data from Akshay Sridhar")
-
+[link](https://lenkanovak.github.io/images/houdini.mp4)
 
