@@ -14,7 +14,7 @@ Here are some examples for stand-alone analysis of `.nc` output:
 - LES
     - vertical profiles ([.jl](https://github.com/CliMA/VizCLIMA.jl/blob/ln/prep-for-merge/src/scripts/default_moist_les.jl))
     - 3D energy spectrum ([.jl](https://github.com/CliMA/VizCLIMA.jl/blob/ln/prep-for-merge/src/scripts/taylorgreen_spectrum.jl))
-    - animation: LES simple ([.jl](https://github.com/LenkaNovak/LenkaNovak.githu    b.io/blob/master/files/les-simple-animation.jl), [.ipynb](https://github.com/Lenk    aNovak/LenkaNovak.github.io/blob/master/files/les-simple-animation.ipynb))
+    - animation: LES simple ([.jl](https://github.com/LenkaNovak/LenkaNovak.github.io/blob/master/files/les-simple-animation.jl), [.ipynb](https://github.com/LenkaNovak/LenkaNovak.github.io/blob/master/files/les-simple-animation.ipynb))
 
 To apply a Julia script on ClimateMachine.jl output, and convert it into a Jupyter Notebook using Literate, run:
 
