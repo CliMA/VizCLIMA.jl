@@ -1,8 +1,13 @@
 using VizCLIMA, Documenter
 
 pages = Any[
-  "Home" => "index.md"
-]
+  "Home" => "index.md",
+  "VizCLIMA Scripts" => "vizclima_script_examples.md",
+  "End-to-end Modeling (SLURM)" => "slurm_users_end_to_end.md",
+  "Nimbus" => "datavis.md",
+  "Gallery" => "gallery.md",
+  "Third party software" => "third_party.md"
+ ]
 
 makedocs(
   sitename = "VizCLIMA.jl",
