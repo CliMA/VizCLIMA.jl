@@ -40,3 +40,4 @@ src/**/Manifest.toml
 TAGS
 
 *-checkpoint.ipynb
+*.ipynb_checkpoints
