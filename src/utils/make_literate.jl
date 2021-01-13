@@ -20,11 +20,11 @@ function parse_commandline()
     "--no-execution"
     help = "make a markdown or notebook file but without executing it"
     action = :store_false
-  end                  
+  end
   return parse_args(s)
-end                    
-                       
-function main()       
+end
+
+function main()
   parsed_args = parse_commandline()
   if parsed_args["markdown"]
     Literate.markdown(parsed_args["input-file"], outputdir=parsed_args["output-dir"]; execute=parsed_args["no-execution"])

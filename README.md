@@ -4,16 +4,20 @@ A toolkit for visualizing CLIMA's results
 
 |||
 |---------------------:|:----------------------------------------------|
-| **Documentation**    | [![latest][docs-dev-img]][docs-dev-url]       |
-| **Azure Build**      | [![azure][azure-img]][azure-url]              |
+| **Docs Build**       | [![docs build][docs-bld-img]][docs-bld-url]   |
+| **Documentation**    | [![dev][docs-dev-img]][docs-dev-url]          |
+| **GHA CI**           | [![gha ci][gha-ci-img]][gha-ci-url]           |
 | **Code Coverage**    | [![codecov][codecov-img]][codecov-url]        |
 | **Bors**             | [![Bors enabled][bors-img]][bors-url]         |
+
+[docs-bld-img]: https://github.com/CliMA/VizCLIMA.jl/workflows/Documentation/badge.svg
+[docs-bld-url]: https://github.com/CliMA/VizCLIMA.jl/actions?query=workflow%3ADocumentation
 
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
 [docs-dev-url]: https://CliMA.github.io/VizCLIMA.jl/dev/
 
-[azure-img]: https://dev.azure.com/climate-machine/VizCLIMA/_apis/build/status/climate-machine.VizCLIMA.jl?branchName=master
-[azure-url]: https://dev.azure.com/climate-machine/VizCLIMA/_build/latest?definitionId=8&branchName=master
+[gha-ci-img]: https://github.com/CliMA/VizCLIMA.jl/workflows/ci/badge.svg
+[gha-ci-url]: https://github.com/CliMA/VizCLIMA.jl/actions?query=workflow%3Aci
 
 [codecov-img]: https://codecov.io/gh/CliMA/VizCLIMA.jl/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/CliMA/VizCLIMA.jl

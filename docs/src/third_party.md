@@ -1,6 +1,6 @@
 # Third-party Interactive Software
 
-- There are various third party packages that enable instant 3D interactive visualisation, slicing and animations of our data (NetCDF format by default), as well as conversion to other data formats. 
+- There are various third party packages that enable instant 3D interactive visualisation, slicing and animations of our data (NetCDF format by default), as well as conversion to other data formats.
 
 ## Packages
   - [ParaView](https://www.paraview.org): 3D visualisation, slicing and simple data manipulation, handles VTK files and can convert data to CSV and other formats.

@@ -1,6 +1,6 @@
 # End-to-end modelling
 
-These examples run the model and output the visualisations/performance metrics using one script. They are aimed at users of the Caltech's HPC cluster users, but can be easily modified for other systems.  
+These examples run the model and output the visualisations/performance metrics using one script. They are aimed at users of the Caltech's HPC cluster users, but can be easily modified for other systems.
 
 ## Scripts
 

@@ -37,7 +37,7 @@ function get_zonal_mean(file_name, var_name, t_spinup);
 end
 
 
-# ## Plotting 
+# ## Plotting
 
 # Control
 lat, z, zm_c= get_zonal_mean( "$CLIMA_NETCDF/"fnames[1], var_name, 1);

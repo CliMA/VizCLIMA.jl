@@ -5,8 +5,8 @@ using Statistics: mean
 
 # data folders
 data_folder = DATA_FOLDER
-combined_file = COMBINE_FILE 
-analysis_folder = ANALYSIS_FOLDER 
+combined_file = COMBINE_FILE
+analysis_folder = ANALYSIS_FOLDER
 
 # check if combined file extist, otherwise create it
 if !isfile(combined_file)
@@ -14,7 +14,7 @@ if !isfile(combined_file)
   files = sort(readdir(data_folder, join=true))
   files = [file for file in files if occursin(".nc", file)]
   files = [file for file in files if !occursin("AtmosCore", file)]
-  
+
   ## extract grid
   z    = ncread(files[1], "z")
   time = [0.0]
@@ -22,7 +22,7 @@ if !isfile(combined_file)
     push!(time, ncread(file, "simtime")[1])
   end
   grid = Dict("time" => time[2:end], "z" => z)
-  
+
   ## define variables of interest to aggregate
   vars = ["w", "qt", "ql", "cld_frac", "thl", "ht", "var_w", "w3", "var_qt", "var_thl", "cov_w_qt", "cov_w_thl", "w_qt_sgs", "w_ht_sgs", "cld_cover"]
 
@@ -36,14 +36,14 @@ if !isfile(combined_file)
     end
   end
   data = Dict(var => vcat(data[var]...) for var in vars)
-  
+
   ## write data to disk as combined file
   for var in vars
     nccreate(
-      combined_file, 
-      var, 
+      combined_file,
+      var,
       "time", grid["time"],
-      "z", grid["z"], 
+      "z", grid["z"],
     )
     ncwrite(data[var], combined_file, var)
   end
