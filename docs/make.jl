@@ -12,7 +12,7 @@ pages = Any[
 makedocs(
   sitename = "VizCLIMA.jl",
   doctest = false,
-  strict = false,
+  strict = true,
   format = Documenter.HTML(
         prettyurls = get(ENV, "CI", nothing) == "true",
         mathengine = MathJax(Dict(
@@ -23,11 +23,13 @@ makedocs(
         ))
   ),
   clean = false,
-  modules = [Documenter, VizCLIMA],
+  modules = [VizCLIMA],
   pages = pages,
 )
 
 deploydocs(
-           repo = "github.com/CliMA/VizCLIMA.jl.git",
-           target = "build",
-          )
+    repo = "github.com/CliMA/VizCLIMA.jl.git",
+    target = "build",
+    push_preview = true,
+    forcepush = true,
+)
