@@ -46,7 +46,7 @@ $(document).ready(function() {
   })
 
   // list below is the lunr 2.1.3 list minus the intersect with names(Base)
-  // (all, any, get, in, is, only, which) and (do, else, for, let, where, while, with)
+  // (all, any, get, in, is, which) and (do, else, for, let, where, while, with)
   // ideally we'd just filter the original list but it's not available as a variable
   lunr.stopWordFilter = lunr.generateStopWordFilter([
     'a',
@@ -112,6 +112,7 @@ $(document).ready(function() {
     'off',
     'often',
     'on',
+    'only',
     'or',
     'other',
     'our',
@@ -181,7 +182,7 @@ $(document).ready(function() {
   var store = {}
 
   documenterSearchIndex['docs'].forEach(function(e) {
-      store[e.location] = {title: e.title, category: e.category, page: e.page}
+      store[e.location] = {title: e.title, category: e.category}
   })
 
   $(function(){
@@ -195,14 +196,14 @@ $(document).ready(function() {
           q.term(t.toString(), {
             fields: ["title"],
             boost: 100,
-            usePipeline: true,
+            usePipeline: false,
             editDistance: 0,
             wildcard: lunr.Query.wildcard.NONE
           })
           q.term(t.toString(), {
             fields: ["title"],
             boost: 10,
-            usePipeline: true,
+            usePipeline: false,
             editDistance: 2,
             wildcard: lunr.Query.wildcard.NONE
           })
@@ -221,11 +222,7 @@ $(document).ready(function() {
         data = store[result.ref]
         link = $('<a class="docs-label">'+data.title+'</a>')
         link.attr('href', documenterBaseURL+'/'+result.ref)
-        if (data.category != "page"){
-          cat = $('<span class="docs-category">('+data.category+', '+data.page+')</span>')
-        } else {
-          cat = $('<span class="docs-category">('+data.category+')</span>')
-        }
+        cat = $('<span class="docs-category">('+data.category+')</span>')
         li = $('<li>').append(link).append(" ").append(cat)
         searchresults.append(li)
       })
